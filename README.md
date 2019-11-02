@@ -4,7 +4,7 @@
 
 This is a clone project of Google Chrome Momentum I created only for Chingu pre-work.
 
-[Demo page is here.]{https://ancient-bastion-32986.herokuapp.com/}
+[Demo page is here.](https://ancient-bastion-32986.herokuapp.com/)
 
 ## 2: Difference between original Momentum and mine
 
