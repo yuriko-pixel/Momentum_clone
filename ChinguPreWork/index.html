@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html labg="ja"> 
+<head> 
+<meta chrset="utf-8" /> 
+<title>Clock Background</title> 
+<link rel="stylesheet" href="styles.css" />
+</head> 
+<body>
+	<div class="form main background">
+			<div class="clock-disp-sm clock-disp">
+				<div class="clock"></div>
+				<div id="display">
+					<div class="clock-message"></div>
+					<form name="form1" action="javascript:void(0)" class="flex-1">
+						<label for="nameInput" class="namelabel">Name: </label>
+						<input type="text" class="nameInput" name="nameInput" value="">
+						<input type="submit" class="submit" value="submit" onclick="namesubmit();">
+					</form>
+					<div class="name"></div>
+				</div>
+				<div class="task-message"></div>
+				<!-- <div class="taskdisp"> -->
+						<div class="taskcheck hidden">
+								<div class="taskshow"></div>
+								<div class="taskplus" onclick="taskzero();">&times;</div>
+						</div>
+						<form name ="form2" onsubmit="checktext();"　action="javascript:void(0)" class="taskform">
+								<div class="task-message hidden"></div> </br>
+								<label for="taskinput" class="tasklabel">Task: </label>
+								<input type="text" class="taskinput" value="" name="taskinput">
+								<input type="button" class="submit" value="submit" onclick="tasksubmit();">
+							</form>
+						<!-- </div> -->
+						<div class="niceword"></div>
+			</div>
+	</div>
+<script src="main.js"></script>
+</body> 
+</html> 

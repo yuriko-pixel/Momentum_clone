@@ -1,0 +1,221 @@
+@charset "UTF-8"; 
+
+body { 
+  width: 100%;
+  height: 100%;
+}
+
+.background {
+  background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: repeat;
+  width: 100%; 
+  height: 100%;
+}
+
+.haru-1 {
+  background-image: url("./img/haru-1.jpg");
+}
+
+.haru-2 {
+  background-image: url("./img/haru-2.jpg");
+}
+
+.haru-3 {
+  background-image: url("./img/haru-3.jpg");
+}
+
+.natu-1 {
+  background-image: url("./img/natu-1.jpg");
+}
+
+.natu-2 {
+  background-image: url("./img/natu-2.jpg");
+}
+
+.natu-3 {
+  background-image: url("./img/natu-3.jpg");
+}
+
+.aki-1 { 
+  background-image: url("./img/aki-1.jpg");
+}
+
+.aki-2 {
+  background-image: url("./img/aki-2.jpg");
+}
+
+.aki-3 {
+  background-image: url("./img/aki-3.jpg");
+}
+
+.fuyu-1 {
+  background-image: url("./img/fuyu-1.jpg");
+}
+
+.fuyu-2 {
+  background-image: url("./img/fuyu-2.jpg");
+}
+
+.fuyu-3 {
+  background-image: url("./img/fuyu-3.jpg");
+}
+
+.hidden {
+  display: none;
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+@media (min-width: 768px) {
+
+  .flex {
+    display: inline-flex;
+    margin: 10px;
+}
+  .clock {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 1440px) {
+
+  .form {
+    position: absolute; 
+    z-index: 1; 
+    left: 0; 
+    top: 0; 
+    height: 100%; 
+    width: 100%; 
+    overflow: auto;
+  }
+  
+  .flex {
+    display: inline-flex;
+  }
+
+  .name-box {
+    width: calc(100% * 0.6);
+    height: 70px;
+    border: none;
+    border-bottom: solid 2px lightgray;
+    text-align: center;
+    font-size: 70px;
+    margin: 0 0 0 10px;
+  }
+  
+  .task-box {
+    width: calc(100% * 0.6);
+    height: 70px;
+    border: none;
+    border-bottom: solid 2px lightgray;
+    text-align: center;
+    font-size: 70px;
+    margin: 0 0 0 10px; 
+    margin-right: 100px;
+  }
+  
+  .clock {
+    padding-top: 20px;
+    font-size: 70px;
+  }
+
+  .clock-disp {
+    width: 100%;
+    height: 400px; 
+    color: white; 
+    text-align: center;  
+    font-size: 70px;
+  }
+  
+  .niceword {
+    height: 50px;
+    color: white;
+    font-size: 30px;
+  }
+  
+  .clock-message {
+    padding-right: 20px;
+  }
+
+  .taskplus {
+    font-size: 50px;
+    padding: 20px;
+    cursor: pointer;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .namelabel {
+    font-size: 50px;
+    opacity: 0.5;
+  }
+
+  .nameInput {
+    width: 300px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid 3px white;
+    background: none;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+  }
+
+  .tasklabel {
+    font-size: 50px;
+    opacity: 0.5;
+    padding-right: 40px;
+  }
+
+  .taskinput {
+    width: 300px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid 3px white;
+    background: none;
+    font-size: 50px;
+    /* margin-left: 100px; */
+    color: white;
+    text-align: center;
+  }
+  
+  .task-message {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
+  .task {
+    width: 50%;
+    margin-right: 400px;
+    text-align: left;
+  }
+
+  .submit {
+    margin: 0 auto;
+    font-size: 30px;
+    color: white;
+    border: solid 2px white;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+  
+  .background {
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: repeat;
+    width: 100%; 
+    height: 100%;
+  }
+  .name {
+    font-size: 70px;
+    padding-left: 10px;
+  }
+}
