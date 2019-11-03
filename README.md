@@ -20,9 +20,4 @@ b. weather and quotes function
 
 As I wrote in the introduction, my app doesn't have these functions YET. Honestly, I didn't have enough time to finish up implementing fetch APIs. 
 
-## 3: Responsive Desgin
-
-This is also the same to Google Chrome Memontum, but my app doesn't apply to mobile. 
-Accordingly, the app might look bizarre on your phone. I recommend to check only on tablet or laptop. 
-
 Enjoy!
