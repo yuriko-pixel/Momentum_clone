@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html labg="ja"> 
+<html labg="en"> 
 <head> 
 <meta chrset="utf-8" /> 
 <title>Clock Background</title>
@@ -8,7 +8,7 @@
 </head> 
 <body>
 	<div class="form main background">
-		<div class="clock-disp-sm clock-disp">
+		<div class="clock-disp">
 			<div class="clock"></div>
 			<div class="clockandname">
 				<div class="clock-message"></div>
@@ -16,24 +16,24 @@
 			</div>
 		</div>
 		<div class="nameshow">
-			<form name="form1" action="javascript:void(0)" class="flex">
+			<form name="form1" action="javascript:void(0)" class="flex-1">
 				<label for="nameInput" class="namelabel">Name: </label>
 				<input type="text" class="nameInput" name="nameInput" value="">
-				<input type="submit" class="submit" value="submit" onclick="namesubmit();">
+				<input type="button" class="submit" value="submit" onclick="namesubmit();">
 			</form>
 		</div>
 		<div class="task-message"></div>
 		<div class="taskwrap">
 			<div class="taskdisp">
-				<div class="taskshow"></div>
+				<div class="taskshow hidden"></div>
 				<div class="taskplus hidden" onclick="taskzero();">&times;</div>
 			</div>
 		</div>
-		<form name ="form2" onsubmit="checktext();"　action="javascript:void(0)" class="taskform">
+		<form name ="form2" onsubmit="checktext();"　action="javascript:void(0)" class="taskform flex-2">
 			<div class="task-message hidden"></div> </br>
 			<label for="taskinput" class="tasklabel">Task: </label>
 			<input type="text" class="taskinput" value="" name="taskinput">
-			<input type="button" class="submit" value="submit" onclick="tasksubmit();">
+			<input type="button" class="submit-1" value="submit" onclick="tasksubmit();">
 		</form>
 		<div class="niceword"></div>
 	</div>

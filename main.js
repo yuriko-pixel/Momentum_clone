@@ -1,4 +1,4 @@
-//clock
+//clock display
 
 let clock = document.getElementsByClassName('clock')[0];
 let now = new Date();
@@ -23,7 +23,7 @@ if (3 <= hour && hour <= 12){
   time = 3;
 };
 
-//season
+//season calculation
 let season = '';
 if((1 <= month && month <3) || (11 <= month && month <= 12)){
   season = 'fuyu';
@@ -41,6 +41,8 @@ background.classList.add(`${season}-${time}`);
 let textmessage = document.getElementsByClassName('task-message')[0];
 textmessage.textContent = 'What is your main focus today?';
 
+//function called when name inout is submitted
+
 function namesubmit() {
   console.log('name submit');
   let name ='';
@@ -50,21 +52,29 @@ function namesubmit() {
   document.getElementsByClassName('submit')[0].classList.add('hidden');
   document.getElementsByClassName('clockandname')[0].classList.add('flex');
   document.getElementsByClassName('namelabel')[0].classList.add('hidden');
+  document.getElementsByClassName('clock-message')[0].classList.add('widthchange');
+  document.getElementsByClassName('name ')[0].classList.add('widthchange');
 };
+
+//function called when task inout is submitted
 
 function tasksubmit() {
   let task = '';
   task = document.forms.form2.taskinput.value;
   document.getElementsByClassName('taskshow')[0].textContent = task;
-  document.getElementsByClassName('task-message')[0].textContent = 'TODAY: click task to done';
+  document.getElementsByClassName('task-message')[0].textContent = 'TODAY: click task to done'; 
   document.getElementsByClassName('taskshow')[0].classList.remove('hidden');
   document.getElementsByClassName('taskinput')[0].classList.add('hidden');
-  document.getElementsByClassName('submit')[1].classList.add('hidden');
+  document.getElementsByClassName('submit-1')[0].classList.add('hidden');
+  document.getElementsByClassName('tasklabel')[0].classList.add('hidden');
   document.getElementsByClassName('taskform')[0].classList.add('hidden');
   document.getElementsByClassName('taskplus')[0].classList.remove('hidden');
   document.getElementsByClassName('taskdisp')[0].classList.add('flex');
-  document.getElementsByClassName('taskform')[0].classList.add('hidden');
+  document.getElementsByClassName('taskshow')[0].classList.add('widthchange');
+  document.getElementsByClassName('taskplus')[0].classList.add('widthchange');
 };
+
+//random nice word generation function called when task is done
 
 let niceword = ['Nice work!', 'Great Work!', 'Way to go!', 'Nice.'];
 
@@ -84,13 +94,13 @@ taskshow.addEventListener('click', function() {
   }
 }, false);
 
+//function called when task is deleted by clicking "x" button
 function taskzero() {
   document.forms.form2.taskinput.value = '';
-  document.getElementsByClassName('task-message')[0].textContent = 'What is your main focus today?';
+  document.getElementsByClassName('task-message')[0].textContent = 'What is your main focus today?'; //initializing comment
   document.getElementsByClassName('taskinput')[0].classList.remove('hidden');
-  document.getElementsByClassName('submit')[1].classList.remove('hidden');
+  document.getElementsByClassName('submit-1')[0].classList.remove('hidden');
   document.getElementsByClassName('taskshow')[0].classList.add('hidden');
   document.getElementsByClassName('taskplus')[0].classList.add('hidden');
-  // document.getElementsByClassName('taskcheck')[0].classList.remove('flex');
   document.getElementsByClassName('taskform')[0].classList.remove('hidden');
 }
